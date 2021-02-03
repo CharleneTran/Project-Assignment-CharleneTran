@@ -1,30 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>Metrolics</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Some Demo website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.js">
+    
     <meta name="theme-color" content="#fafafa">
-</head>
 <body class="page page-home">
     <header class="page--header">
-        <div class="row m-col-1-2">
+        <div class="row m-1-2">
+            <nav class="mobile-nav m-hide l-hide">
+                Mobile menu
+            </nav>
             <div class="column">
-                <p>Metrolics</p>
+                <img class="logo" src="placeholder.svg" alt="slider placeholder">
             </div>
-            <div class="column">
-                <p>Logo here</p>
-            </div>
-            <div class="column">
-                <p>Menu here</p>
-            </div>
+            <nav class="column main-nav">
+                <a href="#" class="main-nav--item active">Home</a>
+                <a href="#" class="main-nav--item">Pages</a>
+                <a href="#" class="main-nav--item">Blog</a>
+                <a href="#" class="main-nav--item">Portfolio</a>
+                <a href="#" class="main-nav--item">Contact</a>
+            </nav>
         </div>
     </header>
-    <div class="page--slider">
+    <div class="page--slider s-hide">
         <div class="row">
             <div class="column">
                 <img src="placeholder.svg" alt="slider placeholder">
@@ -40,10 +55,12 @@
         </div>
     </div>
     <section class="about">
-        <div class="row l-col-4">
-            <div class="column span-full">
-                <h2 class="heading">Things That We Do</h2>
-                <p>Ask us what we can do for you</p>
+        <div class="row m-col-2 l-col-4">
+            <div class="column row-span">
+                <h2 class="heading">
+                    Things That We Do
+                </h2>
+                <p class="tagline">Ask us what we can do for you</p>
             </div>
             <div class="column">
                 <h3 class="heading">Web Solutions</h3>
@@ -74,13 +91,13 @@
 
     <section class="projects--new">
         <div class="row m-col-2 l-col-3">
-            <div class="column special-project">
+            <div class="column row-span">
                 <h2 class="heading">
                     What’s Up Lately?
                 </h2>
-                <p>Read up on our latest work</p>
+                <p class="tagline"> Read up on our latest work</p>
             </div>
-            <div class="column span-full">
+            <div class="column special-project">
                 <figure class="project">
                     <img src="placeholder.svg" alt="placeholder">
                     <figcaption class="project--caption">
@@ -121,11 +138,11 @@
 
     <section class="projects">
         <div class="row m-col-2 l-col-3">
-            <div class="column span-full">
+            <div class="column row-span">
                 <h2 class="heading">
                     Our lastest projects
                 </h2>
-                <p>Client happy? We are happy</p>
+                <p class="tagline"> Client happy? We are happy</p>
             </div>
             <div class="column">
                 <figure class="project">
@@ -186,11 +203,11 @@
 
     <section class="thingsofabove">
         <div class="row l-col-2">
-            <div class="column span-full">
+            <div class="column row-span">
                 <h2 class="heading">
                     Thingsofabove
                 </h2>
-                <p>Misc stuff we could not put anyplace else</p>
+                <p class="tagline"> Misc stuff we could not put anyplace else</p>
             </div>
             <div class="column">
                 <h4>Sample Accordion Menu here</h4>
@@ -222,28 +239,69 @@
     </div>
 
     <footer class="page--footer">
-        <div class="row m-col-2 l-col-4">
-            <div class="page--footer--intro column span-full">
-                <img class="peewee" src="placeholder.svg" alt="placeholder"> <h5 class="herman">Pewee Herman</h5> 
-                <p class="intro">Peewee has over 10 years experience in the industry.
-                   He is our Creative Director, digital designer, web designer and front-end developer.
-                   He is also pretty good with a sketchbook. Before starting the company he worked as a designer and studio manager
-                   for a design house who boasted a number of big name clients. </p> 
+        <div class="row m-col-2 l-col-4 row-no-margin">
+            <div class="page--footer--intro column row-span">
+                <h3 class="heading inverted">
+                    Peewee Herman
+                </h3>
+                <p class="inverted">Peewee has over 10 years experience in the industry.
+                    He is our Creative Director, digital designer, web designer and front-end developer.
+                    He is also pretty good with a sketchbook. Before starting the company he worked as a designer and studio manager
+                    for a design house who boasted a number of big name clients.</p>
             </div>
-            <div class="column">
-                <h4>About Us</h4>
+            <div class="column about-us s-hide">
+                <h4 class="inverted">About Us</h4>
+                <p class="inverted">
+                    Minions ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha po kass tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa bee do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo!
+                    Bananaaaa aaaaaah butt potatoooo hana dul sae butt. Hahaha wiiiii ti aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want bananaaa! Underweaaar potatoooo tank yuuu! Aaaaaah potatoooo poopayee.
+                </p>
             </div>
-            <div class="column">
-                <h4>Flickr Photos</h4>
+            <div class="column flickr s-hide">
+                <h4 class="inverted">Flickr Photos</h4>
+                <div class="sub-grid m-col-3">
+                    <div class="column">
+                        <img src="placeholder.svg" alt="placeholder">
+                    </div>
+                    <div class="column">
+                        <img src="placeholder.svg" alt="placeholder">
+                    </div>
+                    <div class="column">
+                        <img src="placeholder.svg" alt="placeholder">
+                    </div>
+                    <div class="column">
+                        <img src="placeholder.svg" alt="placeholder">
+                    </div>
+                    <div class="column">
+                        <img src="placeholder.svg" alt="placeholder">
+                    </div>
+                    <div class="column">
+                        <img src="placeholder.svg" alt="placeholder">
+                    </div>
+                </div>
             </div>
-            <div class="column">
-                <h4>Recent Tweets</h4>
+            <div class="column soc-msgs">
+                <h4 class="inverted">Recent Tweets</h4>
+                <ul class="twts">
+                    <li class="twts__item inverted">
+                        <span class="twts__item__tag">
+                            <a href="#">#minions</a> - ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha po kass tulaliloo
+                        </span>
+                    </li>
+                    <li class="twts__item inverted">
+                        <span class="twts__item__tag">
+                            <a href="#">#minions</a> psum banana potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha  tulaliloo potatoooo. 
+                        </span>
+                    </li>
+                </ul>
             </div>
-            <div class="column">
-                <h4>Newsletter</h4>
+            <div class="column newsletter s-hide">
+                <h4 class="inverted">Newsletter</h4>
+                <p class="inverted">
+                    Minions ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha po kass tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa bee do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo!
+                    Bananaaaa aaaaaah butt potatoooo hana dul sae butt.
             </div>
         </div>
     </footer>
-
 </body>
+<script src="main.js"></script>
 </html>
